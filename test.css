@@ -1,0 +1,32 @@
+
+html {
+    font-size: 22px;
+    background: rgb(247, 199, 199);
+}
+
+body {
+    padding: 2rem;
+}
+
+.card {
+    background-color: rgba(241, 72, 72, 0.788);
+    color:mintcream;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+
+}
+
+@media (min-width: 620px) {
+    .cards {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (min-width: 920px) {
+    .cards {grid-template-columns: repeat(3, 1fr);}
+}
